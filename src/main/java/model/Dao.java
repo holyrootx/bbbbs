@@ -6,8 +6,6 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import javax.print.attribute.PrintJobAttribute;
-
 
 public class Dao {
 	String url = "jdbc:mysql://localhost:3306/myBoard";
