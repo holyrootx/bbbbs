@@ -1,0 +1,59 @@
+@charset "UTF-8";
+.heading-container{
+    padding: 1.5rem 0;
+}
+.main-container {
+    height: 50rem;
+    background: #f2f4f6; 
+}
+.login-form-container {
+    background-color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    width: 26rem;
+    min-height: 19rem;
+}
+.input-size-setting {
+    padding: 0.8rem 1rem;
+    width: 23.8rem;
+}
+.input-design-setting {
+    background: #FFFFFF;
+    border: 1px solid #dddfe2;
+    border-radius: 0.5rem;
+    font-size: 1.4rem
+}
+.user-input {
+    text-align: start;
+}
+.user-input:focus {
+    outline: none; /* 기본 아웃라인 제거 */
+    border-color: #4CAF50;
+}
+.login-input-container {
+    padding: 0.8rem 0;
+}
+.login-btn-container {
+    margin-top: 0.2rem;
+}
+.login-btn {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+.find-pass-container {
+    padding: 0.6rem 0;
+}
+.find-pass {
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: rgb(48, 48, 253);
+    
+}
+.login-warning-font{
+    font-size: 1.2rem;
+    color: #ff0101;
+
+}

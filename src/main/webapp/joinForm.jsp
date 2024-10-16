@@ -37,8 +37,8 @@
     <div class="join-form-container">
         <form action="joinAction.jsp" method="post">
             <div class="join-input-container">
-                <input class="input-size-setting-halve input-design-setting user-input" type="text" name="firstName" placeholder="성" required>
-                <input class="input-size-setting-halve input-design-setting user-input" type="text" name="lastName" placeholder="이름" required>
+                <input class="input-size-setting-halve input-design-setting user-input" type="text" name="lastName" placeholder="성" required>
+                <input class="input-size-setting-halve input-design-setting user-input" type="text" name="firstName" placeholder="이름" required>
             </div>
             <div class="join-input-container">
                 <select class="input-size-setting-third input-design-setting user-input" name="year" required>
