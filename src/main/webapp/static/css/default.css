@@ -1,0 +1,92 @@
+@charset "UTF-8";
+* {
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, select, table, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none; /* 불릿 포인트 제거 */
+}
+
+nav ul li {
+    display: inline-block; /*수평 배치 */
+    /* margin-right: 20px; 항목 사이 간격 조정 */
+}
+a {
+    text-decoration: none; /* 기본 밑줄 제거 */
+    
+}
+button{
+    background: none;
+    border: none;
+}
+i {
+    display: inline;
+}
+div {
+    margin: 0 auto;
+    /* 가운데 정렬 충 */
+}
+.menu-group{
+    display: flex;
+    align-items: center;
+}
+.menu-item {
+    font-size: 1.8rem;
+    color: #ffffff;
+    padding: 0.5rem;
+    display: block;
+    font-weight: bold;
+}
+
+.menu-item:hover {
+    /* color: red; 마우스를 올렸을 때 색상 변경 */
+    /* text-decoration: underline; 밑줄 추가 */
+    background-color: #45a049;
+    color: #795757;
+    border-radius: 0.5rem;
+    /* border-radius: 1rem; */
+}
+
+.menu-item:active {
+    color: green; /* 클릭할 때 색상 변경 */
+}
+
+.menu-item:visited {
+    /* color: purple; 방문한 링크 색상 */
+}
+
+.menu-item:focus {
+    outline: none; /* 기본 테두리 제거 */
+    background-color: #45a049;/* 포커스 시 배경색 변경 */
+    border-radius: 0.5rem;
+}
+.menu-container {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4CAF50;
+}
+.dongle-light {
+    font-family: "Dongle", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.dongle-regular {
+    font-family: "Dongle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.dongle-bold {
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
