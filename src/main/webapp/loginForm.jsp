@@ -38,7 +38,7 @@
                 <input class="input-size-setting input-design-setting user-input" type="text" name="id" placeholder="아이디를 입력하세요" required autofocus>
             </div>
             <div class="login-input-container">
-                <input class="input-size-setting input-design-setting user-input" type="password" name="password" placeholder="비밀번호를 입력하세요" required>
+                <input class="input-size-setting input-design-setting user-input" type="password" name="pass" placeholder="비밀번호를 입력하세요" required>
             </div>
             <div class="login-input-container login-btn-container">
                 <input class="input-size-setting input-design-setting login-btn" type="submit" value="Login">

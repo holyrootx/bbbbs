@@ -52,6 +52,38 @@ public class Dao {
 		}
 	}
 	
+	public Boolean loginUser(String id,String pass) {
+		try {
+			String sql = "SELECT id,pass FROM user WHERE id = ?";
+			getConn();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, id);
+			rs = pstmt.executeQuery();
+			System.out.println("id = ["+id+"]");
+			System.out.println("pass = ["+pass+"]");
+			if(rs.next()) { 
+				if (id.equals(rs.getString("id")) && pass.equals(rs.getString("pass")) ) {
+					System.out.println(id);
+					System.out.println(rs.getString("id"));
+					conn.close();
+					return true;
+				}
+			} else {
+				conn.close();
+				return false;
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return false;
+	}
+	
+	// 아이디로 WHERE id = "somthing" 이 somthing 이 없으면 아이디 확인하라는 멘트 보내야 할거고
+	// 있으면 비밀번호 체킹하는 로직 있어야될거고
+	
+	
 	
 	
 }
