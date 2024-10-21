@@ -23,7 +23,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-<jsp:include page="static/html/pre_login_header.html"></jsp:include>
+<%
+	request.setCharacterEncoding("UTF-8");
+	String userId = (String)session.getAttribute("id");
+	if (userId == null) {
+%>
+	<jsp:include page="static/html/pre_login_header.html"></jsp:include>
+<% 		
+	} else {
+%>
+	<jsp:include page="static/html/login_header.html"></jsp:include>
+<%
+	}
+%>
+
 <div style="background-color:#ffffff; padding:20px; text-align:center; width: 100%; height: 580px;"></div>
 <jsp:include page="static/html/footer.html"></jsp:include>
 </body>
