@@ -12,8 +12,10 @@ public class BoardViewData {
 	private String title;
 	private String content;
 	private String gender;
-	private LocalDate birthday;
+	private String timeAgo;
+	private String ageRange;
 	private String author_id;
+	private LocalDate birthday;
 	private LocalDateTime created_at;
 	private LocalDateTime updated_at;
 	private LocalDateTime deleted_at;
@@ -22,6 +24,7 @@ public class BoardViewData {
 	private int view_count;
 	private int like_count;
 	private int hate_count;
+	private int commant_count;
 	
 	public int getBoard_id() {
 		return board_id;
@@ -47,17 +50,29 @@ public class BoardViewData {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public LocalDate getBirthday() {
-		return birthday;
+	public String getTimeAgo() {
+		return timeAgo;
 	}
-	public void setBirthday(LocalDate birthday) {
-		this.birthday = birthday;
+	public void setTimeAgo(String timeAgo) {
+		this.timeAgo = timeAgo;
+	}
+	public String getAgeRange() {
+		return ageRange;
+	}
+	public void setAgeRange(String ageRange) {
+		this.ageRange = ageRange;
 	}
 	public String getAuthor_id() {
 		return author_id;
 	}
 	public void setAuthor_id(String author_id) {
 		this.author_id = author_id;
+	}
+	public LocalDate getBirthday() {
+		return birthday;
+	}
+	public void setBirthday(LocalDate birthday) {
+		this.birthday = birthday;
 	}
 	public LocalDateTime getCreated_at() {
 		return created_at;
@@ -107,6 +122,11 @@ public class BoardViewData {
 	public void setHate_count(int hate_count) {
 		this.hate_count = hate_count;
 	}
-	
+	public int getCommant_count() {
+		return commant_count;
+	}
+	public void setCommant_count(int commant_count) {
+		this.commant_count = commant_count;
+	}
 	
 }

@@ -17,17 +17,17 @@
 	
 	Dao dao = new Dao();
 	Board board = new Board();
-
-	board.setTitle(title);
+	
+    board.setTitle(title);
     board.setContent(content);
     board.setAuthor_id(author_id);
     
-	System.out.println(board.getTitle());
-	System.out.println(board.getContent());
-	System.out.println(board.getAuthor_id());
-	dao.writeBoard(board);
+    System.out.println(board.getTitle());
+    System.out.println(board.getContent());
+    System.out.println(board.getAuthor_id());
+    dao.writeBoard(board);
 	System.out.println("글쓰기 완료!");
-	
+	response.sendRedirect("board.jsp");
 %>
 </body>
 </html>
