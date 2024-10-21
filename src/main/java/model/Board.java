@@ -9,7 +9,7 @@ public class Board {
 	private int id;
 	private String title;
 	private String content;
-	private int author_id;
+	private String author_id;
 	private LocalDateTime created_at;
 	private LocalDateTime updated_at;
 	private LocalDateTime deleted_at;
@@ -37,10 +37,10 @@ public class Board {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public int getAuthor_id() {
+	public String getAuthor_id() {
 		return author_id;
 	}
-	public void setAuthor_id(int author_id) {
+	public void setAuthor_id(String author_id) {
 		this.author_id = author_id;
 	}
 	public LocalDateTime getCreated_at() {
@@ -91,6 +91,6 @@ public class Board {
 	public void setHate_count(int hate_count) {
 		this.hate_count = hate_count;
 	}
-
+	
 	
 }

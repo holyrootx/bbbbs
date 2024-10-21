@@ -8,12 +8,12 @@ public class BoardViewData {
 	//	id,title,contents,author_id,created_at,updated_at,deleted_at,is_deleted,views,likes,hates
 	//  추가적으로 유저의나이, 유저의 성별
 	//  사용자가 글을 볼 때 필요한 데이터들 모음
-	private int id;
+	private int board_id;
 	private String title;
 	private String content;
 	private String gender;
 	private LocalDate birthday;
-	private int author_id;
+	private String author_id;
 	private LocalDateTime created_at;
 	private LocalDateTime updated_at;
 	private LocalDateTime deleted_at;
@@ -23,11 +23,11 @@ public class BoardViewData {
 	private int like_count;
 	private int hate_count;
 	
-	public int getId() {
-		return id;
+	public int getBoard_id() {
+		return board_id;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setBoard_id(int board_id) {
+		this.board_id = board_id;
 	}
 	public String getTitle() {
 		return title;
@@ -53,10 +53,10 @@ public class BoardViewData {
 	public void setBirthday(LocalDate birthday) {
 		this.birthday = birthday;
 	}
-	public int getAuthor_id() {
+	public String getAuthor_id() {
 		return author_id;
 	}
-	public void setAuthor_id(int author_id) {
+	public void setAuthor_id(String author_id) {
 		this.author_id = author_id;
 	}
 	public LocalDateTime getCreated_at() {
@@ -107,5 +107,6 @@ public class BoardViewData {
 	public void setHate_count(int hate_count) {
 		this.hate_count = hate_count;
 	}
+	
 	
 }
