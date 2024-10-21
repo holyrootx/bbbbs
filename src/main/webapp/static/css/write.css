@@ -1,0 +1,57 @@
+@charset "UTF-8";
+.heading-container{
+    padding: 1.5rem 0;
+}
+.main-container {
+    height: 50rem;
+    background: #f2f4f6; 
+}
+.login-form-container {
+    background-color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    width: 26rem;
+    min-height: 19rem;
+}
+.input-size-setting-title {
+    padding: 0.8rem 1rem;
+    width: 36.8rem;
+}
+.input-size-setting-contents {
+    padding: 0.8rem 1rem;
+    width: 36.8rem;
+    min-height: 12.8rem;
+}
+.input-size-setting-write {
+    padding: 0.8rem 1rem;
+    width: 36.8rem;
+}
+.input-design-setting {
+    background: #FFFFFF;
+    border: 1px solid #dddfe2;
+    border-radius: 0.5rem;
+    font-size: 1.4rem
+}
+.user-write {
+    text-align: start;
+}
+.user-write:focus {
+    outline: none; /* 기본 아웃라인 제거 */
+    border-color: #4CAF50;
+}
+.write-input-container {
+    padding: 0.8rem 0;
+}
+.write-btn-container {
+    margin-top: 0.2rem;
+}
+.write-btn {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+.border-line{
+    margin: 0.5rem 0;
+    border: 0.5px solid #d3d3d3;
+}
